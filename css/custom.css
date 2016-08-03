@@ -1,6 +1,6 @@
 .container { width:100%; }
 
-.body-content { margin-left: 14em; margin-top: 2.5em; width: 85%; }
+.body-content { margin-left: 14em; margin-top: 2.5em; width: 85%; transition: margin-left 0.3s linear; -moz-transition: margin-left 0.3s linear; -webkit-transition: margin-left 0.3s linear;}
 
 header { padding: 0.7em; background-color: gray; color: white; font-size: large;}
 
@@ -8,7 +8,7 @@ header a { background-color: gray; color: white; text-decoration: none; }
 
 header a:hover { text-decoration: none; }
 
-.pdsa-sn-wrapper { position: absolute; top: 3.6em; left: 0em; width: 13em; height: 100%; background-color: black; }
+.pdsa-sn-wrapper { position: absolute; top: 3.6em; left: 0em; width: 13em; height: 100%; background-color: black; transition: left 0.3s linear; -moz-transition: left 0.3s linear; -webkit-transition: left 0.3s linear; }
 
 .pdsa-sn-wrapper ul { width: 11em; list-style: none; margin-top: 2em; margin-left: 1em; padding: 03em; }
 
@@ -26,8 +26,15 @@ header a:hover { text-decoration: none; }
 
 .pdsa-sn-wrapper ul .pdsa-sn-brand a:hover { color: lightblue; background: none; }
 
-@media all and (max-width: 768px) { 
-  .pdsa-sn-wrapper { left: -13em; }
+.pdsa-sn-wrapper ul li a span { margin-top: -1em; margin-bottom: -1em; margin-left: 0em; margin-top: -1em; padding-top: -1em; padding-bottom: -1em;}
 
-   .body-content { margin-left: 0em; }
+.pdsa-sn-wrapper ul li ul { list-style: none; margin-top: -4em; margin-left: -2em; }
+
+@media all and (max-width: 768px) { 
+  .pdsa-sn-wrapper { left: -10em; }
+
+   .pdsa-sn-wrapper ul li a i { padding-left: 7em; margin-top: -1em; margin-bottom: -1em; }
+
+   .body-content { margin-left: 3em; }
+
  } 

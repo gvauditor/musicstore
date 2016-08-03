@@ -14,25 +14,74 @@
 <div class="container">
 	<div class="row">
 	<header> <a href="index.php">My Tunes</a> </header>
-	<nav class="pdsa-sn-wrapper">
+	<nav id="sideNavParent" class="pdsa-sn-wrapper">
 		<ul>
 			<li class="pds-sn-brand">
-				<a href="index.php">Music</a>
+				<a href="index.php" class="visible-sm visible-md visible-lg">Music</a>
 			</li>
 			<li>
-				<a href="#">Home</a>
+				<a href="#">
+					<span class="visible-sm visible-md visible-lg">Home</span>
+					<i class="glyphicon glyphicon-home visible-xs"></i>
+				</a>
 			</li>
 			<li>
-				<a href="#">Genres</a>
+				<a href="#" data-toggle="collapse" data-target="#ulGenres">
+					<span class="visible-sm visible-md visible-lg">Genres&nbsp;<b class="caret"></b></span>
+					<i class="glyphicon glyphicon-globe visible-xs"></i>
+				</a>
+
+				<div class="visible-sm visible-md visible-lg">
+				<ul id="ulGenres" class="collapse" data-parent="#sideNavParent">
+					<li>
+						<a href="#">All Genres</a>
+					</li>
+					<li>
+						<a href="#">Jazz</a>
+					</li>
+					<li>
+						<a href="#">Country</a>
+					</li>
+					<li>
+						<a href="#">Rock</a>
+					</li>
+				</ul>
+				</div>
 			</li>
 			<li>
-				<a href="#">Playlists</a>
+				<a href="#" data-toggle="collapse" data-target="#ulPlaylists"> 
+					<span class="visible-sm visible-md visible-lg">Playlists&nbsp;<b class="caret"></b></span>
+					<i class="glyphicon glyphicon-list-alt visible-xs"></i>
+				</a>
+
+				<div class="visible-sm visible-md visible-lg">
+				<ul id="ulPlaylists" class="collapse" data-parent="#sideNavParent">
+					<li>
+						<a href="#">All Playlist</a>
+					</li>
+					<li>
+						<a href="#">Classical</a>
+					</li>
+					<li>
+						<a href="#">Romantic</a>
+					</li>
+					<li>
+						<a href="#">Favorite</a>
+					</li>
+				</ul>
+				</div>
 			</li>
 			<li>
-				<a href="#">Songs</a>
+				<a href="#">
+					<span class="visible-sm visible-md visible-lg">Songs</span>
+					<i class="glyphicon glyphicon-music visible-xs"></i>
+				</a>
 			</li>
 			<li>
-				<a href="#">Downloads</a>
+				<a href="#">
+					<span class="visible-sm visible-md visible-lg">Downloads</span>
+					<i class="glyphicon glyphicon-download visible-xs"></i>
+				</a>
 			</li>
 		</ul>
 	</nav>
